@@ -34,7 +34,7 @@ function helloRoute() {
             console.log("migrations/.migrate:" + data);
         });
             var migrate = require('migrate');
-            var set = migrate.load('migrations/.migrate', 'migration');
+            var set = migrate.load('migrations/.migrate', 'migrations');
 
             set.up(function (err) {
                 if (err) throw err;
